@@ -117,7 +117,7 @@ public class GenLockedRecorder : MonoBehaviour
         // This is the actual sleep/busy loop simulating waiting for the genlock signal.
         var sleepTime = nextGenLockTime - t - 0.01f; // conservative sleep
         if (sleepTime>0)
-            Thread.Sleep((int)sleepTime / 1000);
+            Thread.Sleep((int)(sleepTime * 1000));
         do // busy-loop the remaining time for accuracy
         {
             t = Time.realtimeSinceStartup;
