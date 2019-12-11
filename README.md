@@ -1,4 +1,5 @@
 # Unity Proof-of-Concept Project for Improved Framerate Precision and Genlock
+### Check out the [blog post](https://blogs.unity3d.com/2019/06/03/precise-framerates-in-unity/) for an introduction.
 
 This Unity sample project demonstrates a technique using a WaitForEndOfFrame coroutine to improve precision when trying to achieve a specific target frame rate.
 
